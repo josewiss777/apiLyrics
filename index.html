@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Lyrics Songs</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="div-spinner">
+    <div class="spinner none">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+  </div>
+  <main class="container">
+    <h1 class="title">Lyrics 🎼 Songs</h1>
+    <div>
+      <p class="paragraph-title">Consulta aquí la letra de tu<span class="song-fav"> canción favorita</span></p>
+      <form action="#" class="form" id="formSearch">
+        <label for="artist">Artista:</label>
+        <input type="text" id="artist" placeholder="Nombre del artísta"/>
+        <label for="song">Canción:</label>
+        <input type="text" id="song" placeholder="Nombre de la canción"/>
+        <input class="btn-search" type="submit" value="Buscar letra"/>
+        <div class="div-alert" id="alert"></div>
+      </form>
+    </div>
+    <div id="result">
+      <p class="paragraph-one" id="resultOne"></p>
+      <div class="letter" id="resultLetter"></div>
+    </div>
+  </main>
+  <script src="js/app.js" type="module" defer></script>
+</body>
+</html>
